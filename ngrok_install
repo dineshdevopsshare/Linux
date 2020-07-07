@@ -1,0 +1,17 @@
+#Ngrok is a sensational, free open source and cross-platform reverse proxy server for exposing local servers behind NATs and firewalls to the public Internet over secure tunnels. It is a remarkable computer program that you can use to implement personal cloud services directly from home.
+#Ngrok is super easy to install, simple run the commands below to download and unzip the archive file which contains a single binary.
+mkdir ngrok
+cd ngrok/
+wget -c https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+unzip ngrok-stable-linux-amd64.zip
+ls
+mkdir -p /var/www/html/ 
+cat > /var/www/html/index.html <<'EOF'
+<!DOCTYPE html>
+<html>
+        <body>
+                <h1>This is for learning purpose</h1>
+                <p>We will test nginx proxy with this setup.</p>
+        </body>
+</html>
+EOF
